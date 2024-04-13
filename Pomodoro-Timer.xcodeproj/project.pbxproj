@@ -16,6 +16,7 @@
 		7021EAA92BCA824300B62648 /* Pomodoro_TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021EAA82BCA824300B62648 /* Pomodoro_TimerTests.swift */; };
 		7021EAB32BCA824300B62648 /* Pomodoro_TimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021EAB22BCA824300B62648 /* Pomodoro_TimerUITests.swift */; };
 		7021EAB52BCA824300B62648 /* Pomodoro_TimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021EAB42BCA824300B62648 /* Pomodoro_TimerUITestsLaunchTests.swift */; };
+		7021EAC22BCA859400B62648 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7021EAC12BCA859400B62648 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7021EAAE2BCA824300B62648 /* Pomodoro-TimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pomodoro-TimerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7021EAB22BCA824300B62648 /* Pomodoro_TimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro_TimerUITests.swift; sourceTree = "<group>"; };
 		7021EAB42BCA824300B62648 /* Pomodoro_TimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro_TimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7021EAC12BCA859400B62648 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,11 @@
 		7021EA902BCA824100B62648 /* Pomodoro-Timer */ = {
 			isa = PBXGroup;
 			children = (
-				7021EA912BCA824100B62648 /* AppDelegate.swift */,
-				7021EA932BCA824100B62648 /* SceneDelegate.swift */,
-				7021EA952BCA824100B62648 /* ViewController.swift */,
-				7021EA972BCA824100B62648 /* Main.storyboard */,
-				7021EA9A2BCA824300B62648 /* Assets.xcassets */,
-				7021EA9C2BCA824300B62648 /* LaunchScreen.storyboard */,
 				7021EA9F2BCA824300B62648 /* Info.plist */,
+				7021EAC12BCA859400B62648 /* Localizable.xcstrings */,
+				7021EAC72BCA860F00B62648 /* storyboard */,
+				7021EAC32BCA85A400B62648 /* views */,
+				7021EAC62BCA85FF00B62648 /* Resources */,
 			);
 			path = "Pomodoro-Timer";
 			sourceTree = "<group>";
@@ -125,6 +125,49 @@
 				7021EAB42BCA824300B62648 /* Pomodoro_TimerUITestsLaunchTests.swift */,
 			);
 			path = "Pomodoro-TimerUITests";
+			sourceTree = "<group>";
+		};
+		7021EAC32BCA85A400B62648 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				7021EAC42BCA85C700B62648 /* intro */,
+				7021EAC52BCA85CD00B62648 /* timer */,
+				7021EA912BCA824100B62648 /* AppDelegate.swift */,
+				7021EA932BCA824100B62648 /* SceneDelegate.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		7021EAC42BCA85C700B62648 /* intro */ = {
+			isa = PBXGroup;
+			children = (
+				7021EA952BCA824100B62648 /* ViewController.swift */,
+			);
+			path = intro;
+			sourceTree = "<group>";
+		};
+		7021EAC52BCA85CD00B62648 /* timer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = timer;
+			sourceTree = "<group>";
+		};
+		7021EAC62BCA85FF00B62648 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7021EA9A2BCA824300B62648 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7021EAC72BCA860F00B62648 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7021EA972BCA824100B62648 /* Main.storyboard */,
+				7021EA9C2BCA824300B62648 /* LaunchScreen.storyboard */,
+			);
+			path = storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +256,7 @@
 			knownRegions = (
 				en,
 				Base,
+				uk,
 			);
 			mainGroup = 7021EA852BCA824100B62648;
 			productRefGroup = 7021EA8F2BCA824100B62648 /* Products */;
@@ -233,6 +277,7 @@
 			files = (
 				7021EA9B2BCA824300B62648 /* Assets.xcassets in Resources */,
 				7021EA9E2BCA824300B62648 /* Base in Resources */,
+				7021EAC22BCA859400B62648 /* Localizable.xcstrings in Resources */,
 				7021EA992BCA824100B62648 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
