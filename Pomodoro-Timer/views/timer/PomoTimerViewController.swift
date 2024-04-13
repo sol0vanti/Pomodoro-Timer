@@ -1,6 +1,6 @@
 import UIKit
 
-class TomoTimerViewController: UIViewController {
+class PomoTimerViewController: UIViewController {
     @IBOutlet weak var tomoButton: UIButton!
     @IBOutlet weak var timerButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!

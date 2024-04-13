@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tomo Timer-->
+        <!--Pomo Timer-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="TomoTimerViewController" id="BYZ-38-t0r" customClass="TomoTimerViewController" customModule="Pomodoro_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TomoTimerViewController" id="BYZ-38-t0r" customClass="PomoTimerViewController" customModule="Pomodoro_Timer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,7 +89,7 @@
                             <constraint firstItem="Ket-dV-LOp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ri1-tQ-zWL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Tomo Timer" largeTitleDisplayMode="always" id="bBy-Sr-xcE"/>
+                    <navigationItem key="navigationItem" title="Pomo Timer" largeTitleDisplayMode="always" id="bBy-Sr-xcE"/>
                     <connections>
                         <outlet property="startButton" destination="p71-dU-PyY" id="q3G-BP-fkc"/>
                         <outlet property="stopButton" destination="yZt-Bi-vqL" id="U4T-76-e2x"/>
