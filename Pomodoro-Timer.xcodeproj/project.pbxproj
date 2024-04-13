@@ -16,6 +16,7 @@
 		7021EAB32BCA824300B62648 /* Pomodoro_TimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021EAB22BCA824300B62648 /* Pomodoro_TimerUITests.swift */; };
 		7021EAB52BCA824300B62648 /* Pomodoro_TimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021EAB42BCA824300B62648 /* Pomodoro_TimerUITestsLaunchTests.swift */; };
 		7021EAC22BCA859400B62648 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7021EAC12BCA859400B62648 /* Localizable.xcstrings */; };
+		703FF0602BCA9A2A00F31AE0 /* TomoTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703FF05F2BCA9A2A00F31AE0 /* TomoTimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7021EAB22BCA824300B62648 /* Pomodoro_TimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro_TimerUITests.swift; sourceTree = "<group>"; };
 		7021EAB42BCA824300B62648 /* Pomodoro_TimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro_TimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7021EAC12BCA859400B62648 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		703FF05F2BCA9A2A00F31AE0 /* TomoTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomoTimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		7021EAC32BCA85A400B62648 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				703FF05E2BCA9A1A00F31AE0 /* timer */,
 				7021EA912BCA824100B62648 /* AppDelegate.swift */,
 				7021EA932BCA824100B62648 /* SceneDelegate.swift */,
 			);
@@ -149,6 +152,14 @@
 				7021EA9C2BCA824300B62648 /* LaunchScreen.storyboard */,
 			);
 			path = storyboard;
+			sourceTree = "<group>";
+		};
+		703FF05E2BCA9A1A00F31AE0 /* timer */ = {
+			isa = PBXGroup;
+			children = (
+				703FF05F2BCA9A2A00F31AE0 /* TomoTimerViewController.swift */,
+			);
+			path = timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				703FF0602BCA9A2A00F31AE0 /* TomoTimerViewController.swift in Sources */,
 				7021EA922BCA824100B62648 /* AppDelegate.swift in Sources */,
 				7021EA942BCA824100B62648 /* SceneDelegate.swift in Sources */,
 			);

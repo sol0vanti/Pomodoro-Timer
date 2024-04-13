@@ -11,7 +11,7 @@
         <!--Tomo Timer-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pomodoro_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TomoTimerViewController" id="BYZ-38-t0r" customClass="TomoTimerViewController" customModule="Pomodoro_Timer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,6 +27,9 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
                                     <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tomoButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xtx-KK-Xd9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MV6-nZ-ubz">
                                 <rect key="frame" x="74" y="343" width="245" height="71.333333333333314"/>
@@ -36,6 +39,9 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="48"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="timerButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bC9-b0-nLi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p71-dU-PyY">
                                 <rect key="frame" x="40" y="763" width="313" height="35"/>
@@ -49,6 +55,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="startButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="US2-H0-Rg9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZt-Bi-vqL">
                                 <rect key="frame" x="40" y="718" width="313" height="35"/>
@@ -60,6 +69,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="stopButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zdU-Sf-0QU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -78,6 +90,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tomo Timer" largeTitleDisplayMode="always" id="bBy-Sr-xcE"/>
+                    <connections>
+                        <outlet property="startButton" destination="p71-dU-PyY" id="q3G-BP-fkc"/>
+                        <outlet property="stopButton" destination="yZt-Bi-vqL" id="U4T-76-e2x"/>
+                        <outlet property="timerButton" destination="MV6-nZ-ubz" id="diy-B5-ra4"/>
+                        <outlet property="tomoButton" destination="Ket-dV-LOp" id="sWd-8x-CYG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
